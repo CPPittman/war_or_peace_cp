@@ -77,7 +77,7 @@ RSpec.describe Card do
   end
 
   it "exists" do
-    card = Card.new(:diamond, 'One', 1)
+    card = Card.new(:diamond, 'Ace', 1)
 
     expect(card).to be_an_instance_of(Card)
   end
@@ -159,7 +159,7 @@ RSpec.describe Card do
   end
 
   it "exists" do
-    card = Card.new(:spade, 'One', 1)
+    card = Card.new(:spade, 'Ace', 1)
 
     expect(card).to be_an_instance_of(Card)
   end
@@ -240,7 +240,7 @@ RSpec.describe Card do
   end
 
   it "exists" do
-    card = Card.new(:club, 'One', 1)
+    card = Card.new(:club, 'Ace', 1)
 
     expect(card).to be_an_instance_of(Card)
   end
@@ -322,7 +322,7 @@ RSpec.describe Card do
   end
 
   it "exists" do
-    card = Card.new(:heart, 'One', 1)
+    card = Card.new(:heart, 'Ace', 1)
 
     expect(card).to be_an_instance_of(Card)
   end
@@ -336,11 +336,107 @@ RSpec.describe Card do
     # double check that I've covered them all/checked them off the list N  
 
   it "has readable attributes" do
+    card = Card.new(:diamond, 'King', 13)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('King')
+    expect(card.rank).to eq(13)
+  end
+
+  it "has readable attributes" do
     card = Card.new(:diamond, 'Queen', 12)
 
     expect(card.suit).to eq(:diamond)
     expect(card.value).to eq('Queen')
     expect(card.rank).to eq(12)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Jack', 11)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Jack')
+    expect(card.rank).to eq(11)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Ten', 10)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Ten')
+    expect(card.rank).to eq(10)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Nine', 9)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Nine')
+    expect(card.rank).to eq(9)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Eight', 8)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Eight')
+    expect(card.rank).to eq(8)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Seven', 7)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Seven')
+    expect(card.rank).to eq(7)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Six', 6)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Six')
+    expect(card.rank).to eq(6)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Five', 5)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Five')
+    expect(card.rank).to eq(5)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Four', 4)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Four')
+    expect(card.rank).to eq(4)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Three', 3)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Three')
+    expect(card.rank).to eq(3)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Two', 2)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Two')
+    expect(card.rank).to eq(2)
+  end
+
+  it "has readable attributes" do
+    card = Card.new(:diamond, 'Ace', 1)
+
+    expect(card.suit).to eq(:diamond)
+    expect(card.value).to eq('Ace')
+    expect(card.rank).to eq(1)
   end
 end
 
