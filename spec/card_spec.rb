@@ -863,7 +863,7 @@ end
     expect(card.rank).to eq(1)
   end
 
-end
+end 
 
 # " " *use same strategy as above^^
 
