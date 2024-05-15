@@ -18,9 +18,9 @@ end
 # attr_reader
 
 class card_rank
-    attr_reader :card_rank,
+    attr_reader :card_value,
                 :card_suit,
-                :card_value
+                :card_rank
     
     def initialize(card_value, card_suit, card_rank)
         @card_value       = card_value
