@@ -22,10 +22,10 @@ class card_rank
                 :card_suit,
                 :card_value
     
-    def initialize(card_rank, card_suit, card_value)
-        @card_rank       = name
-        @card_suit       = color
-        @card_value      = []
+    def initialize(card_value, card_suit, card_rank)
+        @card_value       = card_value
+        @card_suit       = card_suit
+        @card_rank      = []
         end
     end            
 
