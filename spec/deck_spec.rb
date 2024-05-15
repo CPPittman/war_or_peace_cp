@@ -9,13 +9,25 @@
 # remove_card: this method will remove the top card from the deck
 # add_card: this method will add one card to the bottom (end) of the deck
 
-def initialize 
+def initialize (card_rank)
    card_rank = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
     card_rank = "card_rank"
    end 
 end    
 
-attr_reader 
+# attr_reader
+
+class card_rank
+    attr_reader :card_rank,
+                :card_suit,
+                :card_value
+    
+    def initialize(card_rank, card_suit, card_value)
+        @card_rank       = name
+        @card_suit       = color
+        @card_value      = []
+        end
+    end            
 
 # high_ranking_cards
 
