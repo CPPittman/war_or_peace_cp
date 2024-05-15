@@ -29,7 +29,7 @@ class card_rank
         end
     end            
 
-# high_ranking_cards
+# high_ranking_cards 
 
 # percent_high_ranking
 
