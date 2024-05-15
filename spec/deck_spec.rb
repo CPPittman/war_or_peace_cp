@@ -34,7 +34,7 @@ class card_rank
 # percent_high_ranking
 
 # remove_card
-# .pop
+# .remove_card
 
 # add_card
-# .push or .shift
+# .add_card
