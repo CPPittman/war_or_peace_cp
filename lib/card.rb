@@ -1,18 +1,13 @@
-require 'rspec'
-require './lib/card'
-
-RSpec.describe Card do
-  it "exists" do
-    card = Card.new(:diamond, 'Queen', 12)
-
-    expect(card).to be_an_instance_of(Card)
+class Card
+    attr_reader :card_suit, :card_value, :card_rank
+  
+    def initialize(card_suit_parameter, card_value_parameter, card_rank_parameter)
+      @card_suit = card_suit_parameter
+      @card_value = card_value_parameter
+      @card_rank = card_rank_parameter
+    end
   end
 
-  it "has readable attributes" do
-    card = Card.new(:diamond, 'Queen', 12)
-
-    expect(card.suit).to eq(:diamond)
-    expect(card.value).to eq('Queen')
-    expect(card.rank).to eq(12)
-  end
-end
+  # found parameter example in the TDD lesson
+  # from the description given seems helpful
+  
