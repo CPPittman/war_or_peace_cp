@@ -6,8 +6,7 @@ class Card
       @card_value = card_value_parameter
       @card_rank = card_rank_parameter
     end
-  end
+end
 
   # found parameter example in the TDD lesson
   # from the description given seems helpful
-  
